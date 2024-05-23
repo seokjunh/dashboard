@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Dashboard.sln"
+    "dotnet.defaultSolution": "dashboard.sln"
 }
