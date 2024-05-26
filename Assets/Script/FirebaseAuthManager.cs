@@ -1,6 +1,8 @@
 using Firebase.Auth;
 using TMPro;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FirebaseAuthManager : MonoBehaviour
 {
@@ -51,13 +53,15 @@ public class FirebaseAuthManager : MonoBehaviour
             {
                 Debug.LogFormat("로그인 성공");
                 AuthResult newUser = task.Result;
+                SceneManager.LoadScene("Dashboard");
             }
         });
     }
 
-    public void SignOut()
-    {
-        auth.SignOut();
-    }
+    // public void SignOut()
+    // {
+    //     auth.SignOut();
+    //     Debug.LogFormat("로그아웃");
+    // }
 
 }
