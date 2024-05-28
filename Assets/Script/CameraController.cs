@@ -30,6 +30,7 @@ public class CameraController : MonoBehaviour
             transform.eulerAngles += rotateValue * rotateSpeed;
         }
     }
+    
     public void CameraDrag()
     {
         if (Input.GetMouseButton(0))
